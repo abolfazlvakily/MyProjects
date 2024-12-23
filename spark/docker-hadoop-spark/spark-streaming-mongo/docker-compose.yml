@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:3.6
+    container_name: mongo
+    ports: 
+      - 27017:27017
+
+  spark-mongo:
+    image: josemyd/docker-spark-mongo
+    container_name: spark-mongo
+    command: tail -f /dev/null
+    depends_on:
+    - mongo
