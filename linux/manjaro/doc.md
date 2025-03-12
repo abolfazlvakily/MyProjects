@@ -49,3 +49,10 @@ run
 mv fr.ovpn fr.conf
 sudo openvpn --confing fr.conf
 ````
+# RAR
+install
+```shell
+sudo pacman -S unrar
+unrar x filename.rar
+unrar l filename.rar
+```
