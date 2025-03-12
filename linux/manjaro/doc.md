@@ -1,3 +1,5 @@
+# Mirrors
+
 ### Update and set mirrors.
 
 ```shell
@@ -31,3 +33,19 @@ u -> upgrade or update all packs.
 ```shell
 sudo pacman-mirrors --status
 ```
+
+# Openvpn
+
+```shell
+sudo pacman -S openvpn
+```
+show version
+```shell
+openvpn --version
+```
+
+run
+````shell
+mv fr.ovpn fr.conf
+sudo openvpn --confing fr.conf
+````
